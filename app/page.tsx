@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, FileText } from "lucide-react"
+import { Github, Linkedin, Mail } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import ProjectCard from "@/components/project-card"
@@ -39,12 +39,6 @@ export default function Home() {
                 <span className="sr-only">GitHub</span>
               </Link>
             </Button>
-            <Button variant="ghost" size="icon" asChild>
-              <Link href="#" target="_blank" rel="noopener noreferrer">
-                <FileText className="h-5 w-5" />
-                <span className="sr-only">CV</span>
-              </Link>
-            </Button>
           </div>
         </div>
       </header>
@@ -58,13 +52,16 @@ export default function Home() {
             <div className="prose dark:prose-invert max-w-none">
               <p>
                 Active developer with expertise in frontend engineering and full-stack development, specializing in
-                creating responsive web applications, building machine learning models, and developing enterprise
-                software solutions.
+                creating responsive web applications and developing enterprise software solutions across multiple
+                platforms.
               </p>
               <p>
                 With a diverse technical portfolio spanning 12 programming languages and 36 public repositories, I bring
                 a comprehensive approach to software development, focusing on clean code, performance optimization, and
-                innovative problem-solving.
+                innovative problem-solving. My projects include tools like the{" "}
+                <strong>Colaborar A+ Chrome Extension</strong>, which helps UNOPAR students streamline their workflow,
+                and low-level programming projects such as <strong>MyOS</strong> (a simple operating system in C) and{" "}
+                <strong>CHIP-8 Emulator</strong>, demonstrating my interest in systems programming.
               </p>
             </div>
             <div className="flex gap-4 pt-4">
@@ -94,7 +91,6 @@ export default function Home() {
                 <TechnicalSkillChart
                   data={[
                     { name: "JavaScript", value: 13 },
-                    { name: "CSS", value: 4 },
                     { name: "TypeScript", value: 4 },
                     { name: "HTML", value: 3 },
                     { name: "C/C++", value: 3 },
@@ -121,9 +117,6 @@ export default function Home() {
                   </li>
                   <li>
                     <strong>Mobile Development</strong> - Flutter, cross-platform, Java
-                  </li>
-                  <li>
-                    <strong>Data Visualization</strong> - Interactive charts, analytics
                   </li>
                   <li>
                     <strong>Desktop Applications</strong> - C#, Java applications
@@ -169,7 +162,6 @@ export default function Home() {
                       <li>Mobile Development</li>
                       <li>Desktop Applications</li>
                       <li>Automation & Scripting</li>
-                      <li>Data Visualization</li>
                     </ul>
                   </div>
                 </div>
@@ -196,6 +188,16 @@ export default function Home() {
             <TabsContent value="all" className="mt-6">
               <div className="grid grid-cols-1 gap-6">
                 <ProjectCard
+                  title="Colaborar A+ - UNOPAR Chrome Extension"
+                  description="A Chrome extension designed to help UNOPAR students easily retrieve activities from the educational platform. Available on the Chrome Web Store."
+                  technologies={["JavaScript", "Chrome Extensions API", "Google Analytics", "Web Development"]}
+                  role="Chrome Extension Developer"
+                  impact="Streamlines the process of retrieving educational activities, saving students time and improving their workflow. Tracks user engagement and feedback for continuous improvement."
+                  githubUrl="https://github.com/nivandosoares/unopar-chrome-extension"
+                  liveUrl="https://chromewebstore.google.com/detail/colaborar-a+/aigpjgbdkakibodbblbjfnnbgaajkbpn?authuser=0&hl=pt-BR&pli=1"
+                />
+
+                <ProjectCard
                   title="README Generator"
                   description="A Next.js application that helps developers generate comprehensive README files based on repository content. Features a clean UI with real-time preview and customizable templates."
                   technologies={["TypeScript", "Next.js", "React", "Tailwind CSS", "OpenAI API"]}
@@ -208,7 +210,7 @@ export default function Home() {
                 <ProjectCard
                   title="PDF Analysis Dashboard"
                   description="A comprehensive C# application for analyzing and managing PDF documents. Features document statistics, content extraction, and batch processing capabilities with a modern UI."
-                  technologies={["C#", ".NET", "WPF", "PDF Processing", "Data Visualization"]}
+                  technologies={["C#", ".NET", "WPF", "PDF Processing", "Desktop Development"]}
                   role="Desktop Application Developer"
                   impact="The project will provide powerful document analysis tools for business users."
                   githubUrl="https://github.com/nivandosoares/PdfAnalysisApp"
@@ -267,10 +269,10 @@ export default function Home() {
 
                 <ProjectCard
                   title="COVID-19 Deaths Graph"
-                  description="A data visualization tool for tracking COVID-19 deaths globally. Features interactive charts, country filtering, and time-series analysis."
-                  technologies={["JavaScript", "Chart.js", "REST API", "Data Visualization"]}
+                  description="A tracking tool for COVID-19 deaths globally. Features interactive charts, country filtering, and time-series analysis."
+                  technologies={["JavaScript", "Chart.js", "REST API", "Frontend Development"]}
                   role="Frontend Developer"
-                  impact="Provides clear visualization of pandemic data for public awareness. Implements responsive design principles for cross-device compatibility."
+                  impact="Provides clear presentation of pandemic data for public awareness. Implements responsive design principles for cross-device compatibility."
                   githubUrl="https://github.com/nivandosoares/covid19-deaths-graph"
                   liveUrl="https://covid19-deaths-graph.vercel.app"
                 />
@@ -299,6 +301,15 @@ export default function Home() {
 
             <TabsContent value="web" className="mt-6">
               <div className="grid grid-cols-1 gap-6">
+                <ProjectCard
+                  title="Colaborar A+ - UNOPAR Chrome Extension"
+                  description="A Chrome extension designed to help UNOPAR students easily retrieve activities from the educational platform. Available on the Chrome Web Store."
+                  technologies={["JavaScript", "Chrome Extensions API", "Google Analytics", "Web Development"]}
+                  role="Chrome Extension Developer"
+                  impact="Streamlines the process of retrieving educational activities, saving students time and improving their workflow. Tracks user engagement and feedback for continuous improvement."
+                  githubUrl="https://github.com/nivandosoares/unopar-chrome-extension"
+                  liveUrl="https://chromewebstore.google.com/detail/colaborar-a+/aigpjgbdkakibodbblbjfnnbgaajkbpn?authuser=0&hl=pt-BR&pli=1"
+                />
                 <ProjectCard
                   title="README Generator"
                   description="A Next.js application that helps developers generate comprehensive README files based on repository content. Features a clean UI with real-time preview and customizable templates."
@@ -331,10 +342,10 @@ export default function Home() {
 
                 <ProjectCard
                   title="COVID-19 Deaths Graph"
-                  description="A data visualization tool for tracking COVID-19 deaths globally. Features interactive charts, country filtering, and time-series analysis."
-                  technologies={["JavaScript", "Chart.js", "REST API", "Data Visualization"]}
+                  description="A tracking tool for COVID-19 deaths globally. Features interactive charts, country filtering, and time-series analysis."
+                  technologies={["JavaScript", "Chart.js", "REST API", "Frontend Development"]}
                   role="Frontend Developer"
-                  impact="Provides clear visualization of pandemic data for public awareness. Implements responsive design principles for cross-device compatibility."
+                  impact="Provides clear presentation of pandemic data for public awareness. Implements responsive design principles for cross-device compatibility."
                   githubUrl="https://github.com/nivandosoares/covid19-deaths-graph"
                   liveUrl="https://covid19-deaths-graph.vercel.app"
                 />
@@ -397,7 +408,7 @@ export default function Home() {
 
             <TabsContent value="mobile" className="mt-6">
               <div className="grid grid-cols-1 gap-6">
-              <ProjectCard
+                <ProjectCard
                   title="Cinema Reservation System"
                   description="A Mobile application for managing cinema seat reservations and scheduling. Features a user-friendly interface and comprehensive reporting."
                   technologies={["Java", "Swing", "JDBC", "SQL", "Desktop Development"]}
@@ -432,10 +443,10 @@ export default function Home() {
               <div className="grid grid-cols-1 gap-6">
                 <ProjectCard
                   title="PDF Analysis Dashboard"
-                  description="A comprehensive C# application for analyzing and managing PDF documents.."
-                  technologies={["C#", ".NET", "WPF", "PDF Processing", "Data Visualization"]}
+                  description="A comprehensive C# application for analyzing and managing PDF documents."
+                  technologies={["C#", ".NET", "WPF", "PDF Processing", "Desktop Development"]}
                   role="Desktop Application Developer"
-                  impact="The project will provide a powerful document analysis tools for business users."
+                  impact="The project will provide powerful document analysis tools for business users."
                   githubUrl="https://github.com/nivandosoares/PdfAnalysisApp"
                   liveUrl="#"
                 />
@@ -471,8 +482,12 @@ export default function Home() {
                       understanding of operating system principles and low-level programming.
                     </li>
                     <li>
-                      <strong>CHIP-8 Emulator (Forked from <a href="https://github.com/queso-fuego/chip8_emulator_c">original source</a> )</strong> - An implementation of the CHIP-8 virtual machine in C with SDL2,
-                      showcasing my ability to understand and emulate computer architectures at a fundamental level.
+                      <strong>
+                        CHIP-8 Emulator (Forked from{" "}
+                        <a href="https://github.com/queso-fuego/chip8_emulator_c">original source</a> )
+                      </strong>{" "}
+                      - An implementation of the CHIP-8 virtual machine in C with SDL2, showcasing my ability to
+                      understand and emulate computer architectures at a fundamental level.
                     </li>
                     <li>
                       <strong>Linux Essentials</strong> - A collection of Bash scripts for system administration and
