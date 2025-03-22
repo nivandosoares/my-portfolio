@@ -101,7 +101,6 @@ const portfolioData: PortfolioData = {
       description: "Languages across different domains",
       data: [
         { name: "JavaScript", value: 13 },
-        { name: "CSS", value: 4 },
         { name: "TypeScript", value: 4 },
         { name: "HTML", value: 3 },
         { name: "C/C++", value: 3 },
