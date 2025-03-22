@@ -7,6 +7,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 export const metadata: Metadata = {
   title: "Nivando Soares - Portfolio",
   description: "Full Stack Developer Portfolio",
+    generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -26,3 +27,6 @@ export default function RootLayout({
   )
 }
 
+
+
+import './globals.css'

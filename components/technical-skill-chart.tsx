@@ -60,6 +60,6 @@ export default function TechnicalSkillChart({ data }: TechnicalSkillChartProps) 
     })
   }, [data])
 
-  return <canvas ref={canvasRef} width={500} height={400} className="w-full h-auto" />
+  return <canvas ref={canvasRef} width={500} height={300} className="w-full h-auto" />
 }
 
