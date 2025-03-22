@@ -14,26 +14,13 @@ interface PdfButtonProps {
 
 // Mock certifications data
 const certifications = [
-  {
-    title: "AWS Certified Cloud Practitioner",
-    issuer: "Amazon Web Services (AWS)",
-    date: "2023",
-  },
-  {
-    title: "Microsoft Certified: Azure Fundamentals",
-    issuer: "Microsoft",
-    date: "2022",
-  },
-  {
-    title: "Google Cloud Certified - Associate Cloud Engineer",
-    issuer: "Google Cloud",
-    date: "2024",
-  },
-  {
-    title: "Certified Kubernetes Administrator (CKA)",
-    issuer: "Cloud Native Computing Foundation (CNCF)",
-    date: "2023",
-  },
+  { title: "NDG Linux Essentials English 0323 cga", issuer: "Cisco Network Academy", date: "2023", hours: "70H" },
+  { title: "JavaScript Basic Certification", issuer: "HackerRank", date: "2022" },
+  { title: "Quality Assurance Developer Certification", issuer: "Freecodecamp.org", date: "2022", hours: "300H" },
+  { title: "Bootcamp EDUZZ Full Stack Developer", issuer: "Digital Innovation One", date: "2021", hours: "95H" },
+  { title: "Responsive Web Design", issuer: "Freecodecamp.org", date: "2021", hours: "300H" },
+  { title: "GIT Essential Training", issuer: "Linkedin Learning", date: "2021", hours: "3H" },
+  { title: "Become a Web Developer", issuer: "Linkedin Learning", date: "2021", hours: "22H" },
 ]
 
 export default function PdfButton({ portfolioData }: PdfButtonProps) {
