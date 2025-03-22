@@ -84,14 +84,14 @@ const portfolioData: PortfolioData = {
   personal: {
     name: "Nivando Soares",
     title: "Frontend Engineer & Full Stack Developer",
-    email: "contact@nivandosoares.dev",
+    email: "sidvandoni@gmail.com",
     github: "github.com/nivandosoares",
     linkedin: "linkedin.com/in/nivandosoares",
   },
   introduction: {
     summary: [
-      "Active developer with expertise in frontend engineering and full-stack development, specializing in creating responsive web applications and developing enterprise software solutions across multiple platforms.",
-      "With a diverse technical portfolio spanning 12 programming languages and 36 public repositories, I bring a comprehensive approach to software development, focusing on clean code, performance optimization, and innovative problem-solving. My projects include tools like the Colaborar A+ Chrome Extension, which helps UNOPAR students streamline their workflow, and low-level programming projects such as MyOS (a simple operating system in C) and CHIP-8 Emulator, demonstrating my interest in systems programming.",
+      "Experienced frontend engineer and full-stack developer with a proven track record of building responsive web applications and scalable enterprise software solutions across diverse platforms.",
+      "Proficient in 12 programming languages with 36+ public repositories, I bring a holistic approach to software development, emphasizing clean code, performance optimization, and innovative problem-solving. Notable projects include the Colaborar A+ Chrome Extension, which streamlines workflows for UNOPAR students, and low-level programming endeavors like MyOS (a custom operating system in C) and a CHIP-8 Emulator, showcasing my passion for systems programming and computer architecture."
     ],
     highlights: ["Colaborar A+ Chrome Extension", "MyOS", "CHIP-8 Emulator"],
   },
@@ -164,7 +164,7 @@ const portfolioData: PortfolioData = {
       title: "README Generator",
       description:
         "A Next.js application that helps developers generate comprehensive README files based on repository content. Features a clean UI with real-time preview and customizable templates.",
-      technologies: ["TypeScript", "Next.js", "React", "Tailwind CSS", "OpenAI API"],
+      technologies: ["TypeScript", "Next.js", "React", "Tailwind CSS", "Tranformers JS"],
       role: "Full Stack Developer",
       impact:
         "Streamlines documentation process, saving developers hours of work. Generates professional README files with consistent structure and formatting.",
@@ -208,14 +208,14 @@ const portfolioData: PortfolioData = {
       categories: ["all", "web"],
     },
     {
-      title: "CHIP-8 Emulator",
+      title: "CHIP-8 Emulator - forked",
       description:
         "An implementation of the CHIP-8 virtual machine in C with SDL2. Features accurate emulation of the original system, custom debugging tools, and a modern interface.",
       technologies: ["C", "SDL2", "Emulation", "Computer Architecture"],
       role: "Systems Developer",
       impact:
-        "Demonstrates understanding of emulation techniques and computer architecture. Educational project showcasing low-level programming and hardware abstraction.",
-      githubUrl: "https://github.com/nivandosoares/chip8_emulator_c",
+        "Contributed by successfull implementing Save/Load state to the emulator",
+        githubUrl: "https://github.com/nivandosoares/chip8_emulator_c",
       liveUrl: "#",
       categories: ["all", "systems"],
     },
@@ -283,7 +283,7 @@ const portfolioData: PortfolioData = {
       title: "Cinema Reservation System",
       description:
         "A Mobile application for managing cinema seat reservations and scheduling. Features a user-friendly interface and comprehensive reporting.",
-      technologies: ["Java", "Swing", "JDBC", "SQL", "Desktop Development"],
+      technologies: ["Java", "Mobile Development", "UX/UI design"],
       role: "Mobile Application Developer",
       impact:
         "Streamlines cinema management operations with an intuitive interface. Implements efficient database operations and business logic for cinema operations.",
@@ -332,7 +332,7 @@ const portfolioData: PortfolioData = {
           {
             name: "CHIP-8 Emulator",
             description:
-              "An implementation of the CHIP-8 virtual machine in C with SDL2, showcasing my ability to understand and emulate computer architectures at a fundamental level.",
+              "A forked implementation of the CHIP-8 virtual machine in C with SDL2, showcasing my ability to contribute in low-level programs and open source.",
             link: {
               text: "original source",
               url: "https://github.com/queso-fuego/chip8_emulator_c",
