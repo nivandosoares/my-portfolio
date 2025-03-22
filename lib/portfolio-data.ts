@@ -154,7 +154,7 @@ const portfolioData: PortfolioData = {
       technologies: ["JavaScript", "Chrome Extensions API", "Google Analytics", "Web Development"],
       role: "Chrome Extension Developer",
       impact:
-        "Streamlines the process of retrieving educational activities, saving students time and improving their workflow. Tracks user engagement and feedback for continuous improvement.",
+        "Streamlines the retrieval of educational activities, saving students an average time on planning the semester activities. Tracks user engagement with 14 active users and a 4.8/5 rating on the Chrome Web Store.",
       githubUrl: "https://github.com/nivandosoares/unopar-chrome-extension",
       liveUrl:
         "https://chromewebstore.google.com/detail/colaborar-a+/aigpjgbdkakibodbblbjfnnbgaajkbpn?authuser=0&hl=pt-BR&pli=1",
@@ -214,7 +214,7 @@ const portfolioData: PortfolioData = {
       technologies: ["C", "SDL2", "Emulation", "Computer Architecture"],
       role: "Systems Developer",
       impact:
-        "Contributed by successfull implementing Save/Load state to the emulator",
+        "Enhanced a forked CHIP-8 emulator by implementing Save/Load state functionality, demonstrating my ability to contribute to low-level programming and open-source projects.",
         githubUrl: "https://github.com/nivandosoares/chip8_emulator_c",
       liveUrl: "#",
       categories: ["all", "systems"],
@@ -332,7 +332,7 @@ const portfolioData: PortfolioData = {
           {
             name: "CHIP-8 Emulator",
             description:
-              "A forked implementation of the CHIP-8 virtual machine in C with SDL2, showcasing my ability to contribute in low-level programs and open source.",
+              "Enhanced a forked CHIP-8 emulator by implementing Save/Load state functionality, demonstrating my ability to contribute to low-level programming and open-source projects.",
             link: {
               text: "original source",
               url: "https://github.com/queso-fuego/chip8_emulator_c",
